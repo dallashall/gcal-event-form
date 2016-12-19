@@ -1,8 +1,12 @@
-// TODO: Clean up code. Make more DRY.
-// Create a trigger based off a form submit if you would like this to run every time a new entry is recorded
+// TODO:
+// * Clean up code
+// * Make more DRY
+// * Add repeatable event funcionality
+
+// NOTE: Create a trigger based off a form submit if you would like this to run every time a new entry is recorded
 
 function createEvent() {
-  var sheet = SpreadsheetApp.getActiveSheet(); // *Only works if this Apps Script is tied to your Google Sheet
+  var sheet = SpreadsheetApp.getActiveSheet(); // * Only works if this Apps Script is tied to your Google Sheet
   var rows = sheet.getDataRange();
   var numRows = rows.getNumRows();
   var values = rows.getValues();
