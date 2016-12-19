@@ -96,6 +96,7 @@ function createEvent() {
       summary: eventName,
       location: eventInfo.location,
       description: eventDesc,
+      guests: techs,
       start: {
         dateTime: eventStart.toISOString()
         
